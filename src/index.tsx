@@ -18,9 +18,10 @@ import "./styles/fonts.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import "react-toastify/dist/ReactToastify.css";
 import { WagmiConfig } from "wagmi";
+import { mainnet } from "./config/mainnet";
 
 // boostrap the bridge
-bootstrap(testnet, {
+bootstrap(mainnet, {
   evm: wagmi.wagmiAdapter,
 });
 
